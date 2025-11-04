@@ -1,5 +1,7 @@
 # Soccer Player Market Value Prediction
 
+A linear regression model implemented from scratch (no scikit-learn) to predict soccer player market values based on performance stats.
+
 ## Project Structure
 
 - Soccer-Market-Value/
@@ -70,4 +72,10 @@ The model is evaluated using the following metrics:
 * Root Mean Squared Error (RMSE) – penalizes larger errors.
 * Mean Absolute Percentage Error (MAPE) – percentage-based error for relative accuracy.
 Metrics are calculated in the notebook using the gradient descent implementation.
+
+## Notes / Limitations
+
+- Model uses only linear regression, so it may underestimate or overestimate extreme market values (e.g., prime Messi/Ronaldo seasons).
+- Some performance-related features, like `passes_blocked`, were excluded due to missing data.
+- Advanced techniques (e.g., Ridge/Lasso, neural networks) could improve prediction accuracy.
 
